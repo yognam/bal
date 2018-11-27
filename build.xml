@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="run" basedir="." name="dijkstra">
+
+
+<target name="run" depends="compile">
+
+
+<java classname="dijkstra">
+
+<classpath path="."/>
+
+</java>
+
+</target>
+
+
+<target name="compile">
+
+<javac destdir="." srcdir="." includeantruntime="false"/>
+
+</target>
+
+</project>
